@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
@@ -38,6 +38,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Himmel
+    uniqueID: 698186355
+    locked: 0
+  - name: Moln
+    uniqueID: 3053766607
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Mark
+    uniqueID: 1893966007
+    locked: 0
+  - name: Plattformer
+    uniqueID: 3494860103
+    locked: 0
+  - name: Sprites
+    uniqueID: 2469549657
     locked: 0
