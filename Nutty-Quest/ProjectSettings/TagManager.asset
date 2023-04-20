@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Backstages
+    uniqueID: 1433228127
+    locked: 0
   - name: Himmel
     uniqueID: 698186355
     locked: 0
