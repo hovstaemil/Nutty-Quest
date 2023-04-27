@@ -6,8 +6,10 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public CharacterController2D controller;
+    public Animator animator;
 
     public float runSpeed = 10f;
+    public float xxx = 12f;
 
     float horizontalMove = 0f;
     bool jump = false;
@@ -16,11 +18,14 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        animator.SetFloat("Speed", MathF.Abs(horizontalMove);
+
         Debug.Log(horizontalMove);
 
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+            animator.SetBool("IsJumping", true);
         }
     }
 

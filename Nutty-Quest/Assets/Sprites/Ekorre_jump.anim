@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "M\xE5rd_run"
+  m_Name: Ekorre_jump
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,9 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 1466523651, guid: bd677f72795e1ca40904f50697734c47, type: 3}
-    - time: 0.016666668
-      value: {fileID: -1196441616, guid: bd677f72795e1ca40904f50697734c47, type: 3}
+      value: {fileID: -644409176, guid: 448437fce36ed8c4fabfda797ab453ed, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -42,14 +40,13 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 1466523651, guid: bd677f72795e1ca40904f50697734c47, type: 3}
-    - {fileID: -1196441616, guid: bd677f72795e1ca40904f50697734c47, type: 3}
+    - {fileID: -644409176, guid: 448437fce36ed8c4fabfda797ab453ed, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.033333335
+    m_StopTime: 0.016666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
