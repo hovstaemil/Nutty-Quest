@@ -2,36 +2,25 @@
     using System.Collections.Generic;
     using UnityEngine;
 
-    public class PlayerMovementSn‰llaFunka : MonoBehaviour
+    public class PlayerMovementSn√§llaFunka : MonoBehaviour
     {
 
         public CharacterController2D controller;
         //public Animator animator;
-
+        private Vector2 velocity;
         public float runSpeed = 10f;
-
-        float HorizontalMove = 0f;
         bool jump = false;
 
-         //Update is called once per frame
-        void Update()
+        void Start()
         {
-            HorizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-         //   animator.SetFloat("Speed", Mathf.Abs(HorizontalMove));
-
-            Debug.Log(HorizontalMove);
-
-         /*   if (Input.GetButtonDown("Jump"))
-            {
-                jump = true;
-                animator.SetBool("IsJumping", true);
-            } */
         }
 
-        void FixedUpdate ()
+        void Update ()
         {
-            //Move our character
-            controller.Move(HorizontalMove * Time.fixedDeltaTime, false,  jump);
-            jump = false;
+            float horizontal = Input.GetAxis("Horizontal");
+
+            velocity = (transform.position * horizontal * Time.deltaTime);
+            
+            CharacterController2D.Move(velocity, false, false);
         }
     }
