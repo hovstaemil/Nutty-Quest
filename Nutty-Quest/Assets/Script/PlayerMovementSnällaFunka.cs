@@ -6,21 +6,39 @@
     {
 
         public CharacterController2D controller;
-        //public Animator animator;
-        private Vector2 velocity;
-        public float runSpeed = 10f;
+        public Animator animator;
+
+        public float runSpeed = 40f;
+
+        float horizontalMove = 0f;
         bool jump = false;
 
-        void Start()
+        // Update is called once per frame
+        void Update()
         {
+
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+            animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                Debug.Log("HOPPAR");
+                jump = true;
+                animator.SetBool("IsJumping", true);
+            }
         }
 
-        void Update ()
+        public void OnLanding()
         {
-            float horizontal = Input.GetAxis("Horizontal");
-
-            velocity = (transform.position * horizontal * Time.deltaTime);
-            
-            CharacterController2D.Move(velocity, false, false);
+            animator.SetBool("IsJumping", false);
         }
-    }
+
+        void FixedUpdate()
+        {
+            // Move our character
+            Debug.Log(horizontalMove);    
+            controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
+            jump = false;
+        }
+}
