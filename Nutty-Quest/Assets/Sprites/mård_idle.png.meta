@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 97a77280b9ff01743aff0e57260fe0b7
+guid: 2fcec2673b1131d40a9868132792076f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,23 +113,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "m\xE5rdIdle_0"
+      name: "m\xE5rd_idle_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b6898ec9756e1c4cb3a21e56c3dd8a5
-      internalID: 1677178503
+      spriteID: e73932560a6d893498291a51612faa51
+      internalID: -1060136883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "m\xE5rdIdle_1"
+      name: "m\xE5rd_idle_1"
       rect:
         serializedVersion: 2
         x: 40
@@ -164,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcf89a91ec2311b469c546e3dc705890
-      internalID: 1323214354
+      spriteID: 460cf90e076a84e43af5c46777d52807
+      internalID: -2017912900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "m\xE5rdIdle_2"
+      name: "m\xE5rd_idle_2"
       rect:
         serializedVersion: 2
         x: 0
@@ -185,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3af509dad38c1840b078a5639756a4f
-      internalID: 654794975
+      spriteID: f741592c303ffb2408a25769112799fe
+      internalID: 1932191713
       vertices: []
       indices: 
       edges: []
@@ -202,9 +190,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "m\xE5rdIdle_0": 1677178503
-      "m\xE5rdIdle_2": 654794975
-      "m\xE5rdIdle_1": 1323214354
+      "m\xE5rd_idle_2": 1932191713
+      "m\xE5rd_idle_1": -2017912900
+      "m\xE5rd_idle_0": -1060136883
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
