@@ -3,26 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class KillPlayer : MonoBehaviour
+public class TakeTheNutt : MonoBehaviour
 {
-    public int Respawn;
+    public static bool HasTheNutt = false;
     // Start is called before the first frame update
-    void StartKillPlayer()
+    void StartTakeTheNutt()
     {
-        
+
     }
 
     // Update is called once per frame
-    void UpdateKillPlayer ()
+    void UpdateTakeTheNutt()
     {
-        
+
     }
 
-     void OnTriggerEnter2D(Collider2D other)
+    void TakeTheNuttt (Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(Respawn);
+            print("has the nut");
+            HasTheNutt = true;
         }
     }
 }
