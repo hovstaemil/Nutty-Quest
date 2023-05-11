@@ -19,11 +19,11 @@ public class Win : MonoBehaviour
 
     }
 
-    void Winn (Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && HasTheNutt == true) 
         {
-            SceneManager.LoadScene(Victory);
+            SceneManager.LoadScene("Victory");
         }
     }
 }

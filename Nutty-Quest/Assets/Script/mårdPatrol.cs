@@ -14,9 +14,9 @@ public class mårdPatrol : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
         currentPoint = pointB.transform;
-        anim.SetBool("isRunning", true);
+        //anim.SetBool("isRunning", true);
 
     }
 

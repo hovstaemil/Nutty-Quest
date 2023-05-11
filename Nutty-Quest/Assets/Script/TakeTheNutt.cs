@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TakeTheNutt : MonoBehaviour
 {
+    public GameObject Nöt;
     public static bool HasTheNutt = false;
     // Start is called before the first frame update
     void StartTakeTheNutt()
@@ -18,12 +19,13 @@ public class TakeTheNutt : MonoBehaviour
 
     }
 
-    void TakeTheNuttt (Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             print("has the nut");
             HasTheNutt = true;
+            Nöt.transform.position = new Vector3(1000.0f, 1.0f, 1.0f);
         }
     }
 }
