@@ -21,9 +21,9 @@ public class Win : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && HasTheNutt == true) 
+        if (other.CompareTag("Player") && HasTheNutt == true) //trädet nuddar spelaren och spelaren har nöten
         {
-            SceneManager.LoadScene("Victory");
+            SceneManager.LoadScene("Victory"); //byter till scenen "Victory"
         }
     }
 }

@@ -8,7 +8,7 @@
         public CharacterController2D controller;
         public Animator animator;
 
-        public float runSpeed = 40f;
+        public float runSpeed = 40f;        //chooses the speed of ekorren
 
         float horizontalMove = 0f;
         bool jump = false;
@@ -21,7 +21,7 @@
 
             animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButtonDown("Jump"))            //when the jump button is pressed it change the animation to HOPPAR if ekorren is in the air
             {
                 Debug.Log("HOPPAR");
                 jump = true;
@@ -29,7 +29,7 @@
             }
         }
 
-        public void OnLanding()
+        public void OnLanding()             //when ekorren has landed it changes the animation back
         {
             animator.SetBool("IsJumping", false);
         }

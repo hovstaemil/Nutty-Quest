@@ -20,9 +20,9 @@ public class KillPlayer : MonoBehaviour
 
      void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")) // if (nuddar player)
         {
-            SceneManager.LoadScene(Respawn);
+            SceneManager.LoadScene(Respawn); //starta om scenen
         }
     }
 }

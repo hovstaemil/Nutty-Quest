@@ -21,11 +21,11 @@ public class TakeTheNutt : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")) //nöten nuddar spelare
         {
             print("has the nut");
             HasTheNutt = true;
-            Nöt.transform.position = new Vector3(1000.0f, 1.0f, 1.0f);
+            Nöt.transform.position = new Vector3(1000.0f, 1.0f, 1.0f); //tar bort(flyttar bort) nöten
         }
     }
 }
